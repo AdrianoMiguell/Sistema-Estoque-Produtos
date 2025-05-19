@@ -1,0 +1,93 @@
+:root {
+  --color-main: 4, 17, 34;
+  --color-sec: 37, 144, 115;
+  --color-tert: 127, 218, 137;
+  --color-quat: 200, 233, 142;
+  --color-quin: 253, 255, 245;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+#loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top: 6px solid rgba(var(--color-main), 1);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: rgb(var(--color-quin));
+}
+
+nav {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(var(--color-tert));
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+nav ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav a,
+nav .logo {
+  text-decoration: none;
+  color: rgb(var(--color-main));
+}
+nav .logo {
+  font-size: 18pt;
+}
+
+main {
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+main .buttons_login {
+  width: 25vw;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main .buttons_login .btn {
+  flex: 1 1 calc(40% + 35px);
+  min-width: 100px;
+}

@@ -1,0 +1,25 @@
+form {
+    display: grid;
+    padding: .75rem;
+    gap: .5rem;
+}
+
+form legend {
+    font-size: 15pt;
+    color: black;
+}
+
+.label-form {
+    margin: 5px 1px;
+    color: rgb(var(--color-main));
+    font-weight: 450;
+    /* color: rgb(var(--color-sec)); */
+}
+.input-form {
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(109, 109, 109);
+}

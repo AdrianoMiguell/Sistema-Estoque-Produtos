@@ -1,0 +1,89 @@
+@media screen and (max-width: 500px) {
+  .section-flex-2 section {
+    min-width: 250px !important;
+  }
+}
+
+.section-dashboard {
+  display: grid;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.section-dashboard .header-section {
+  margin: 0.75rem 0;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-dashboard .header-section .header-options {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.75rem;
+}
+
+.section-flex-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.section-flex-2 section {
+  flex: 1;
+  min-width: 400px;
+}
+
+.container-table {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 2.5px;
+}
+
+.container-table .table {
+  width: 100% !important;
+  border-collapse: collapse;
+}
+
+.container-table .table thead tr {
+  color: white;
+  background-color: rgba(var(--color-main), 0.9) !important;
+}
+
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding: 8px;
+}
+
+.container-table .table tr {
+  text-align: center;
+}
+
+.container-table .table tbody tr {
+  font-size: 11pt;
+}
+
+.container-table .table tbody tr:nth-child(odd) {
+  background-color: rgba(var(--color-tert), 0.2);
+}
+
+.container-table .table tbody tr:nth-child(even) {
+  background-color: rgba(var(--color-tert), 0.1);
+}
+
+.section-card-dashboard {
+  max-width: 800px;
+  background-color: rgba(var(--color-quin), 0.2);
+  padding: 1rem 2.5rem;
+  margin: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(var(--color-main), 0.2);
+}

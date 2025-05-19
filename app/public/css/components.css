@@ -1,0 +1,97 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.95;
+  transition: all 0.25s linear;
+}
+
+.btn:not(:hover),
+.btn:not(:active),
+.btn:not(:focus),
+.btn:not(:focus-visible) {
+  opacity: 0.9;
+}
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:focus-visible {
+  opacity: 1;
+}
+
+.btn-icon {
+  width: var(--size-btn) !important;
+  height: var(--size-btn) !important;
+  font-size: calc(var(--size-btn) / 1.2) !important;
+  padding: 1rem !important;
+}
+
+.btn.btn-main {
+  color: white;
+}
+.btn.btn-main:not(:hover),
+.btn.btn-main:not(:active),
+.btn.btn-main:not(:focus),
+.btn.btn-main:not(:focus-visible) {
+  background-color: rgb(var(--color-main));
+}
+.btn.btn-main:hover,
+.btn.btn-main:active,
+.btn.btn-main:focus,
+.btn.btn-main:focus-visible {
+  background-color: rgb(var(--color-main));
+}
+
+.btn.btn-sec {
+  text-shadow: 0 0 5px white;
+  background: radial-gradient(
+    rgb(var(--color-tert)),
+    rgba(var(--color-tert), 0.95)
+  );
+  color: rgb(var(--color-main));
+}
+
+.btn.btn-danger {
+  color: rgb(255, 228, 228);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.444);
+  background: radial-gradient(rgb(245, 97, 126), rgb(229, 37, 76));
+}
+
+.alert:empty {
+  display: none;
+}
+.alert:not(:empty) {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  font-size: 11pt;
+  opacity: 0;
+  z-index: 9999;
+  animation: disappear 8s linear;
+}
+.alert.alert-danger:not(:empty) {
+  background: linear-gradient(135deg, rgb(226, 32, 48), rgb(255, 7, 28));
+  color: white;
+  border-radius: 5px;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
