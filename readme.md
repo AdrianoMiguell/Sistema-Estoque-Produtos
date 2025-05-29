@@ -14,7 +14,7 @@
 - PHP: Lógica do lado do servidor para gerenciar produtos e usuários, além da conexão com o banco de dados.
 - Banco de Dados (MySQL): Armazenamento de informações dos produtos.
 
-### Cores:
+## Cores:
 - #041122
 - #259073
 - #7fda89
